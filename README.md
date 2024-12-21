@@ -20,11 +20,19 @@ Kullanıcılar, geçmiş tahlil sonuçlarını kıyaslayarak sağlık durumları
 Doktorlar, hastalarının tahlil sonuçlarını belirli kılavuzlarla kıyaslayarak daha doğru bir değerlendirme yapabileceklerdir. Tahlil sonuçları, yaşa göre belirlenmiş referans aralıklarına göre incelenecek ve değerlendirilecektir.
 
 Özellikler
+
 Kullanıcı Tarafı:
-Tahlil Geçmişi: Kullanıcılar geçmiş tahlillerini listeleyebilir ve her bir sonuç üzerinde detaylı bilgi alabilir. Tahlil sonuçları, zaman dilimlerine göre sıralanabilir.
-Sonuç Kıyaslaması: Tahlil sonuçları, referans aralıklarına göre renkli işaretlemelerle (↑ ↓ ↔) gösterilecektir. Böylece kullanıcılar, sonuçlarını kolayca yorumlayabilecektir.
-Profil Yönetimi: Kullanıcılar, kendi profil bilgilerini düzenleyebilir, fotoğraf yükleyebilir ve iletişim bilgilerini güncelleyebilir.
+
+Tahlil Geçmişi:
+ Kullanıcılar geçmiş tahlillerini listeleyebilir ve her bir sonuç üzerinde detaylı bilgi alabilir. Tahlil sonuçları, zaman dilimlerine göre sıralanabilir.
+Sonuç Kıyaslaması:
+ Tahlil sonuçları, referans aralıklarına göre renkli işaretlemelerle (↑ ↓ ↔) gösterilecektir. Böylece kullanıcılar, sonuçlarını kolayca yorumlayabilecektir.
+Profil Yönetimi:
+ Kullanıcılar, kendi profil bilgilerini düzenleyebilir, fotoğraf yükleyebilir ve iletişim bilgilerini güncelleyebilir.
 Yönetici Tarafı (Doktor):
-Kılavuz Oluşturma: Doktorlar, hastaların tahlil sonuçlarını değerlendirebilmek için referans aralıkları belirleyebilir. Her tahlil için yaş gruplarına göre farklı referans değerleri oluşturulacaktır.
-Hasta Takibi: Doktorlar, hastaların tahlil sonuçlarını tarihlere göre görüntüleyebilir ve her bir hastanın sağlık geçmişini takip edebilir. Ayrıca, geçmiş tahliller arasında değişim olup olmadığını değerlendirebilirler.
-Sonuç Kıyaslaması: Doktorlar, hastaların tahlil sonuçlarını kılavuzlardaki referans aralıklarına göre kıyaslayarak daha doğru bir sağlık değerlendirmesi yapabileceklerdir.
+Kılavuz Oluşturma:
+ Doktorlar, hastaların tahlil sonuçlarını değerlendirebilmek için referans aralıkları belirleyebilir. Her tahlil için yaş gruplarına göre farklı referans değerleri oluşturulacaktır.
+Hasta Takibi: 
+Doktorlar, hastaların tahlil sonuçlarını tarihlere göre görüntüleyebilir ve her bir hastanın sağlık geçmişini takip edebilir. Ayrıca, geçmiş tahliller arasında değişim olup olmadığını değerlendirebilirler.
+Sonuç Kıyaslaması: 
+Doktorlar, hastaların tahlil sonuçlarını kılavuzlardaki referans aralıklarına göre kıyaslayarak daha doğru bir sağlık değerlendirmesi yapabileceklerdir.
