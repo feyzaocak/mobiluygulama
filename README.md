@@ -1,38 +1,42 @@
 E-LABORATUVAR SİSTEMİ
 
-
-E-Laboratuvar Sistemi, doktorların hastaların tahlil sonuçlarını hızlı ve verimli bir şekilde değerlendirmelerini sağlayan bir mobil uygulamadır. Uygulama, normal kullanıcılar (hastalar) için tahlil geçmişi görüntüleme ve karşılaştırma özellikleri sunarken, yöneticiler (doktorlar) için tahlil sonuçlarını kılavuzlarla karşılaştırma ve hasta takibi yapabilme imkanı tanır.
+Proje Tanımı:
+E-Laboratuvar Sistemi, doktorların hastaların tahlil sonuçlarını hızlı ve verimli bir şekilde değerlendirmelerine olanak tanıyan yenilikçi bir mobil uygulamadır. Uygulama, normal kullanıcılar (hastalar) için tahlil geçmişi görüntüleme ve sonuç kıyaslama özellikleri sunarken, yöneticilere (doktorlar) hastaları takip etme ve tahlil sonuçlarını referans kılavuzlarına göre analiz etme imkanları sunar.
 
 Proje İçeriği
-1. Kimlik Doğrulama (Authentication)
-Kullanıcıların uygulamaya güvenli bir şekilde giriş yapabilmesi için kimlik doğrulama işlemleri uygulanacaktır. Kullanıcılar, kişisel bilgileriyle hesap oluşturup giriş yaparak uygulama içerisindeki özelliklere erişebilecektir.
+Kimlik Doğrulama (Authentication):
+Kullanıcıların güvenli bir şekilde giriş yapabilmesi için kimlik doğrulama modülü entegre edilmiştir. Kullanıcılar, hesap oluşturup giriş yaparak uygulamanın tüm özelliklerinden faydalanabilir.
 
-2. Yetkilendirme (Authorization)
-Normal kullanıcılar (hastalar) ve yöneticiler (doktorlar) için farklı erişim seviyeleri ve arayüzler oluşturulacaktır. Kullanıcıların rollerine göre erişim hakları belirlenecek ve farklı özelliklere ulaşabileceklerdir.
+Yetkilendirme (Authorization):
+Uygulama, normal kullanıcılar (hastalar) ve yöneticiler (doktorlar) için farklı erişim seviyelerine sahiptir. Her kullanıcı, rolüne uygun arayüzlere ve özelliklere erişebilir.
 
-3. Kullanıcı Profil Yönetimi
-Kullanıcılar, kendi profil bilgilerini düzenleyebilir, tahlil geçmişlerini görüntüleyebilir ve bu veriler üzerinde analizler yapabilirler. Kullanıcılar ayrıca profil fotoğraflarını yükleyebilir ve kişisel bilgilerini güncelleyebilir.
+Kullanıcı Profil Yönetimi:
+Kullanıcılar profil bilgilerini düzenleyebilir, tahlil geçmişlerini görüntüleyebilir ve verilerini analiz edebilir. Ayrıca profil fotoğrafı yükleme ve iletişim bilgilerini güncelleme özellikleri sunulmaktadır.
 
-4. Tahlil Değerlendirmesi
-Kullanıcılar, geçmiş tahlil sonuçlarını kıyaslayarak sağlık durumlarını takip edebilirler. Tahlil sonuçları, renkli işaretlemelerle (↑ ↓ ↔) değerlendirilerek kullanıcıya anlaşılır bir şekilde sunulacaktır.
+Tahlil Değerlendirmesi:
+Kullanıcılar, geçmiş tahlil sonuçlarını karşılaştırarak sağlık durumlarını kolayca takip edebilirler. Tahlil sonuçları, referans değerlerine göre renklerle işaretlenerek (↑ Yüksek, ↓ Düşük, ↔ Normal) kullanıcıya anlaşılır bir şekilde sunulmaktadır.
 
-5. Kılavuzlar ve Değerlendirme
-Doktorlar, hastalarının tahlil sonuçlarını belirli kılavuzlarla kıyaslayarak daha doğru bir değerlendirme yapabileceklerdir. Tahlil sonuçları, yaşa göre belirlenmiş referans aralıklarına göre incelenecek ve değerlendirilecektir.
+Kılavuzlar ve Değerlendirme:
+Doktorlar, hastaların tahlil sonuçlarını yaş gruplarına uygun kılavuzlarla kıyaslayarak daha kapsamlı değerlendirme yapabilir. Referans aralıkları, oluşturulan kılavuzlara göre sistemde yer alacaktır.
 
 Özellikler
-
 Kullanıcı Tarafı:
-
 Tahlil Geçmişi:
- Kullanıcılar geçmiş tahlillerini listeleyebilir ve her bir sonuç üzerinde detaylı bilgi alabilir. Tahlil sonuçları, zaman dilimlerine göre sıralanabilir.
+Kullanıcılar, geçmiş tahlillerini listeleyip detaylarını görüntüleyebilir. Tahliller, zaman dilimlerine göre sıralanır ve kolay erişim sağlanır.
+
 Sonuç Kıyaslaması:
- Tahlil sonuçları, referans aralıklarına göre renkli işaretlemelerle (↑ ↓ ↔) gösterilecektir. Böylece kullanıcılar, sonuçlarını kolayca yorumlayabilecektir.
+Tahlil sonuçları, referans değerlerine göre farklı renklerle işaretlenir. Bu sayede kullanıcılar, sonuçlarını kolayca yorumlayabilir.
+
 Profil Yönetimi:
- Kullanıcılar, kendi profil bilgilerini düzenleyebilir, fotoğraf yükleyebilir ve iletişim bilgilerini güncelleyebilir.
+Kullanıcılar, profil bilgilerini güncelleyebilir, profil fotoğrafı ekleyebilir ve iletişim bilgilerini düzenleyebilir.
+
 Yönetici Tarafı (Doktor):
 Kılavuz Oluşturma:
- Doktorlar, hastaların tahlil sonuçlarını değerlendirebilmek için referans aralıkları belirleyebilir. Her tahlil için yaş gruplarına göre farklı referans değerleri oluşturulacaktır.
-Hasta Takibi: 
-Doktorlar, hastaların tahlil sonuçlarını tarihlere göre görüntüleyebilir ve her bir hastanın sağlık geçmişini takip edebilir. Ayrıca, geçmiş tahliller arasında değişim olup olmadığını değerlendirebilirler.
-Sonuç Kıyaslaması: 
-Doktorlar, hastaların tahlil sonuçlarını kılavuzlardaki referans aralıklarına göre kıyaslayarak daha doğru bir sağlık değerlendirmesi yapabileceklerdir.
+Doktorlar, hastaların tahlil sonuçlarını değerlendirmek için yaş gruplarına özel referans değerleri belirleyebilir.
+
+Hasta Takibi:
+Doktorlar, hastaların tahlil geçmişlerini tarihlere göre sıralı bir şekilde görüntüleyebilir. Bu geçmiş, tahliller arasındaki değişimleri de (↑ Artış, ↓ Azalma, ↔ Değişim Yok) analiz etmeyi sağlar.
+
+Sonuç Kıyaslaması:
+Doktorlar, hastaların tahlil sonuçlarını oluşturulan kılavuzlarla kıyaslayarak daha doğru teşhisler yapabilir.
+
