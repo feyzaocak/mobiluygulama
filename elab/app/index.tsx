@@ -3,20 +3,27 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function HomeScreen() {
-  const router = useRouter(); // Router'ı kullanarak farklı sayfalara geçiş yapabilirsiniz.
+  const router = useRouter();
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>eLab Uygulamasına Hoş Geldiniz</Text>
-      <Button
-        title="Doktor Girişi"
-        onPress={() => router.push('/DoktorInputScreen')} // Yeni sayfaya yönlendirir.
-      />
-      <Button
-        title="Kullanıcı Geçmişi"
-        onPress={() => router.push('/UserHistoryScreen')} // Yeni sayfaya yönlendirir.
-        color="gray"
-      />
+
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Doktor Girişi"
+          onPress={() => router.push('/DoktorInputScreen')}
+          color="#4CAF50" // Yeşil renk
+        />
+      </View>
+
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Kullanıcı Geçmişi"
+          onPress={() => router.push('/UserHistoryScreen')}
+          color="#607D8B" // Gri renk
+        />
+      </View>
     </View>
   );
 }
@@ -26,11 +33,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#f9f9f9', // Hafif gri arka plan
+    padding: 20,
   },
   title: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 30,
+    color: '#333', // Başlık rengi
+  },
+  buttonContainer: {
+    width: '80%',
+    marginBottom: 15,
+    borderRadius: 8,
+    overflow: 'hidden', // Kenarları yuvarlatmak için
   },
 });
