@@ -1,23 +1,23 @@
 import React from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 
-const userHistoryData = [
-  { id: '1', date: '2024-12-01', value: 'Hormon Değeri: 3.4 (Normal)' },
-  { id: '2', date: '2024-11-15', value: 'Hormon Değeri: 5.6 (Yüksek)' },
-  { id: '3', date: '2024-11-01', value: 'Hormon Değeri: 2.1 (Düşük)' },
+const testResults = [
+  { id: '1', test: 'Kan Tahlili', result: 'Normal' },
+  { id: '2', test: 'Şeker', result: 'Yüksek' },
+  { id: '3', test: 'Tansiyon', result: 'Düşük' },
 ];
 
-export default function UserHistoryScreen() {
+export default function PatientDashboardScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Geçmiş Değerler</Text>
+      <Text style={styles.title}>Tahlil Sonuçlarınız</Text>
       <FlatList
-        data={userHistoryData}
+        data={testResults}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <View style={styles.historyItem}>
-            <Text style={styles.date}>{item.date}</Text>
-            <Text style={styles.value}>{item.value}</Text>
+          <View style={styles.card}>
+            <Text style={styles.test}>{item.test}</Text>
+            <Text style={styles.result}>{item.result}</Text>
           </View>
         )}
       />
@@ -28,8 +28,8 @@ export default function UserHistoryScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 16,
     backgroundColor: '#f9f9f9',
-    padding: 20,
   },
   title: {
     fontSize: 24,
@@ -37,23 +37,23 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: 'center',
   },
-  historyItem: {
+  card: {
     backgroundColor: '#fff',
-    padding: 15,
-    marginVertical: 8,
+    padding: 16,
+    marginBottom: 10,
     borderRadius: 8,
     shadowColor: '#000',
     shadowOpacity: 0.1,
     shadowRadius: 5,
     elevation: 3,
   },
-  date: {
-    fontSize: 16,
+  test: {
+    fontSize: 18,
     fontWeight: 'bold',
-    marginBottom: 5,
   },
-  value: {
-    fontSize: 14,
+  result: {
+    fontSize: 16,
+    marginTop: 5,
     color: '#555',
   },
 });

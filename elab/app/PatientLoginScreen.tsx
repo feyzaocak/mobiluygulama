@@ -1,18 +1,17 @@
 import React from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router'; 
+import { useRouter } from 'expo-router'; // useRouter'ı import edin
 
-export default function RegisterScreen() {
-  const router = useRouter(); 
+export default function PatientLoginScreen() {
+  const router = useRouter(); // router değişkenini tanımlayın
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Kayıt Ol</Text>
-      <TextInput placeholder="Ad Soyad" style={styles.input} />
-      <TextInput placeholder="E-posta" style={styles.input} />
+      <Text style={styles.title}>Hasta Girişi</Text>
+      <TextInput placeholder="Kullanıcı Adı" style={styles.input} />
       <TextInput placeholder="Şifre" secureTextEntry style={styles.input} />
-      <Button title="Kayıt Ol" onPress={() => alert('Kayıt işlemi başarıyla tamamlandı!')} />
-      {/* Geri dönüş butonunu buraya ekleyin */}
+      <Button title="Giriş Yap" onPress={() => alert('Giriş işlemi başarılı!')} />
+      {/* Geri dönüş butonunu ekleyin */}
       <Button title="Ana Sayfaya Dön" onPress={() => router.push('/')} color="gray" />
     </View>
   );
