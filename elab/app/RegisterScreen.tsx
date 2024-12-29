@@ -1,19 +1,48 @@
-import React from 'react';
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router'; 
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import { useRouter } from 'expo-router';
 
 export default function RegisterScreen() {
-  const router = useRouter(); 
+  const [fullName, setFullName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const router = useRouter();
+
+  const handleRegister = () => {
+    if (fullName && email && password) {
+      // Basit kayıt kontrolü
+      Alert.alert('Başarılı', 'Kayıt işlemi tamamlandı!');
+      router.push('/PatientLoginScreen'); // Kayıttan sonra giriş ekranına yönlendirme
+    } else {
+      // Eksik bilgi uyarısı
+      Alert.alert('Hata', 'Lütfen tüm alanları doldurun!');
+    }
+  };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Kayıt Ol</Text>
-      <TextInput placeholder="Ad Soyad" style={styles.input} />
-      <TextInput placeholder="E-posta" style={styles.input} />
-      <TextInput placeholder="Şifre" secureTextEntry style={styles.input} />
-      <Button title="Kayıt Ol" onPress={() => alert('Kayıt işlemi başarıyla tamamlandı!')} />
-      {/* Geri dönüş butonunu buraya ekleyin */}
-      <Button title="Ana Sayfaya Dön" onPress={() => router.push('/')} color="gray" />
+      <TextInput
+        style={styles.input}
+        placeholder="Ad Soyad"
+        value={fullName}
+        onChangeText={setFullName}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="E-posta"
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Şifre"
+        secureTextEntry
+        value={password}
+        onChangeText={setPassword}
+      />
+      <Button title="Kayıt Ol" onPress={handleRegister} />
     </View>
   );
 }
@@ -23,6 +52,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#87CEEB',
     padding: 16,
   },
   title: {
@@ -31,12 +61,13 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   input: {
-    width: '100%',
+    width: '80%',
     height: 40,
-    borderColor: '#ccc',
     borderWidth: 1,
-    marginBottom: 10,
+    borderColor: '#ccc',
+    borderRadius: 8,
     paddingHorizontal: 10,
-    borderRadius: 5,
+    marginBottom: 15,
+    backgroundColor: '#fff',
   },
 });
