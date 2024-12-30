@@ -40,13 +40,15 @@ Doktorlar, hastaların tahlil geçmişlerini tarihlere göre sıralı bir şekil
 Sonuç Kıyaslaması:
 Doktorlar, hastaların tahlil sonuçlarını oluşturulan kılavuzlarla kıyaslayarak daha doğru teşhisler yapabilir.
 
+![image](https://github.com/user-attachments/assets/41f16db9-b1eb-4e58-af9f-fa8a1bfb74f5)
 
+![image](https://github.com/user-attachments/assets/84121540-da7c-4e16-9e62-263a1fc6ea95)
 
-![WhatsApp Image 2024-12-30 at 13 33 59](https://github.com/user-attachments/assets/8fe80e74-a752-4602-b557-44cb69f68274)
-![WhatsApp Image 2024-12-30 at 13 35 14](https://github.com/user-attachments/assets/22185e7c-95fe-437c-9667-1e95ad4787b6)
-![WhatsApp Image 2024-12-30 at 13 35 39](https://github.com/user-attachments/assets/7cbdd607-79fe-480e-8555-acd6033f9455)
-![WhatsApp Image 2024-12-30 at 13 35 27](https://github.com/user-attachments/assets/5b736d1d-dea2-46a3-9b27-4e6898af4dd2)
+![image](https://github.com/user-attachments/assets/73dac74e-8fbd-45fc-bc64-3ef9df70ccb8)
 
+![image](https://github.com/user-attachments/assets/ec219e5b-8bbe-4808-95da-3695ec8e1fc4)
+
+![image](https://github.com/user-attachments/assets/196817e0-4abc-4da3-883b-dc2b7b7068e8)
 
 
 
