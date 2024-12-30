@@ -43,9 +43,9 @@ Doktorlar, hastaların tahlil sonuçlarını oluşturulan kılavuzlarla kıyasla
 
 
 ![WhatsApp Image 2024-12-30 at 13 33 59](https://github.com/user-attachments/assets/8fe80e74-a752-4602-b557-44cb69f68274)
-
-
-
+![WhatsApp Image 2024-12-30 at 13 35 14](https://github.com/user-attachments/assets/22185e7c-95fe-437c-9667-1e95ad4787b6)
+![WhatsApp Image 2024-12-30 at 13 35 39](https://github.com/user-attachments/assets/7cbdd607-79fe-480e-8555-acd6033f9455)
+![WhatsApp Image 2024-12-30 at 13 35 27](https://github.com/user-attachments/assets/5b736d1d-dea2-46a3-9b27-4e6898af4dd2)
 
 
 
