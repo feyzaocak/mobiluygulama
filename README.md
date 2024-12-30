@@ -40,3 +40,15 @@ Doktorlar, hastaların tahlil geçmişlerini tarihlere göre sıralı bir şekil
 Sonuç Kıyaslaması:
 Doktorlar, hastaların tahlil sonuçlarını oluşturulan kılavuzlarla kıyaslayarak daha doğru teşhisler yapabilir.
 
+
+
+![WhatsApp Image 2024-12-30 at 13 33 59](https://github.com/user-attachments/assets/8fe80e74-a752-4602-b557-44cb69f68274)
+
+
+
+
+
+
+
+
+
