@@ -1,0 +1,166 @@
+{
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Ahmet Yılmaz",
+      "specialty": "Çocuk Doktoru",
+      "email": "ahmet.yilmaz@hospital.com",
+      "password": "1234"
+    },
+    {
+      "id": "3d3c",
+      "name": "betül",
+      "email": "betül@hospital.com",
+      "password": "123567",
+      "specialization": "dahiliye"
+    },
+    {
+      "id": "0dae",
+      "name": "sinefin",
+      "email": "sinefin@hospital.com",
+      "password": "11111111",
+      "specialization": "cildiye"
+    },
+    {
+      "id": "dc5f",
+      "name": "drfeyza",
+      "email": "feyza@hospital.com",
+      "password": "123456",
+      "specialization": "dis hekimi"
+    }
+  ],
+  
+    "patients": [
+      {
+        "username": "patient1@gmail.com",
+        "password": "1234",
+        "id": "d12d"
+      },
+      {
+        "id": "1",
+        "fullName": "Ali Veli",
+        "age": 4,
+        "doctorId": 1,
+        "testResults": [
+          {
+            "testName": "IgG",
+            "value": 5.3,
+            "unit": "g/L",
+            "normalRange": "3.13-11.70 g/L",
+            "date": "2024-12-01"
+          },
+          {
+            "testName": "IgA",
+            "value": 0.45,
+            "unit": "g/L",
+            "normalRange": "0.36-0.79 g/L",
+            "date": "2024-12-01"
+          }
+        ]
+      },
+      {
+        "id": "2907",
+        "fullName": "Feyza Ocak",
+        "email": "feyzaocak@icloud.com",
+        "password": "aaa",
+        "testResults": [
+        {
+          "testName": "IgG",
+          "value": 8.2,
+          "unit": "g/L",
+          "normalRange": "3.13-11.70 g/L",
+          "date": "2024-12-25"
+        },
+        {
+          "testName": "IgM",
+          "value": 1.1,
+          "unit": "g/L",
+          "normalRange": "0.5-2.0 g/L",
+          "date": "2024-12-25"
+        },
+        {
+          "testName": "CRP",
+          "value": 6.5,
+          "unit": "mg/L",
+          "normalRange": "0.0-5.0 mg/L",
+          "date": "2024-12-25"
+        }
+      ]
+    },
+      
+      {
+        
+        "id": "9049",
+        "fullName": "Deneme",
+        "email": "deneme@gmail.com",
+        "password": "sifre",
+        "birthDate": "01-01-2001"
+      },
+      {
+        "id": "8b3e",
+        "fullName": "Burak",
+        "email": "burak@hotmail.com",
+        "password": "111111111",
+        "birthDate": "08-06-2003"
+      }
+    ]
+  ,
+    "data": [
+      {
+        "age_group": "0-5 Months",
+        "hormones": {
+          "IgG": {
+            "total": 1.10,
+            "IgG1": 0.70,
+            "IgG2": 0.50,
+            "IgG3": 0.30,
+            "IgG4": 0.10
+          },
+          "IgA": {
+            "total": 0.20,
+            "IgA1": 0.15,
+            "IgA2": 0.03
+          },
+          "IgM": 0.80
+        }
+      },
+      {
+        "age_group": "5-9 Months",
+        "hormones": {
+          "IgG": {
+            "total": 3.50,
+            "IgG1": 2.50,
+            "IgG2": 0.70,
+            "IgG3": 0.30,
+            "IgG4": 0.15
+          },
+          "IgA": {
+            "total": 0.30,
+            "IgA1": 0.25,
+            "IgA2": 0.04
+          },
+          "IgM": 1.00
+        }
+      },
+      {
+        "age_group": "10-14 Months",
+        "hormones": {
+          "IgG": {
+            "total": 5.00,
+            "IgG1": 3.00,
+            "IgG2": 1.00,
+            "IgG3": 0.50,
+            "IgG4": 0.20
+          },
+          "IgA": {
+            "total": 0.50,
+            "IgA1": 0.40,
+            "IgA2": 0.10
+          },
+          "IgM": 1.20
+        }
+      }
+    ]
+  
+  
+}
