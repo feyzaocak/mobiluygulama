@@ -3,29 +3,41 @@ import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function PatientLoginScreen() {
-  const [username, setUsername] = useState<string>('');
+  const [email, setEmail] = useState<string>(''); // 'username' yerine 'email'
   const [password, setPassword] = useState<string>('');
   const router = useRouter();
 
-  const handleLogin = () => {
-    // Basit giriş kontrolü
-    if (username === 'patient' && password === '1234') {
-      // Giriş başarılı, yönlendirme yapılıyor
-      router.push('/PatientDashboardScreen');
-    } else {
-      // Yanlış giriş bilgisi
-      Alert.alert('Hata', 'Kullanıcı adı veya şifre yanlış!');
+  const handleLogin = async () => {
+    try {
+      const response = await fetch('http://172.20.10.3:5000/patients'); // API çağrısı
+      const patients = await response.json();
+  
+      // Kullanıcı bilgilerini kontrol et
+      const patient = patients.find(
+        (pat: any) => pat.email === email.trim() && pat.password === password.trim()
+      );
+  
+      if (patient && patient.id) {
+        // Giriş başarılıysa
+        router.push('/PatientDashboardScreen');
+      } else {
+        // Kullanıcı bulunamadıysa
+        Alert.alert('Hata', 'Kullanıcı adı (e-posta) veya şifre yanlış!');
+      }
+    } catch (error) {
+      console.error('Veritabanı Hatası:', error);
+      Alert.alert('Hata', 'Veritabanına bağlanırken bir hata oluştu!');
     }
   };
-
+  
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Hasta Girişi</Text>
       <TextInput
         style={styles.input}
-        placeholder="Kullanıcı Adı"
-        value={username}
-        onChangeText={setUsername}
+        placeholder="Kullanıcı Adı (E-posta)"
+        value={email} // 'username' yerine 'email'
+        onChangeText={setEmail}
       />
       <TextInput
         style={styles.input}
