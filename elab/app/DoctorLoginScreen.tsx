@@ -3,18 +3,41 @@ import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function DoctorLoginScreen() {
-  const [username, setUsername] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
+  const [email, setEmail] = useState<string>(''); // E-posta adresi
+  const [password, setPassword] = useState<string>(''); // Şifre
   const router = useRouter();
 
-  const handleLogin = () => {
-    // Basit giriş kontrolü
-    if (username === 'doctor' && password === '1234') {
-      // Giriş başarılı, yönlendirme yapılıyor
-      router.push('/DoctorDashboardScreen');
-    } else {
-      // Yanlış giriş bilgisi
-      Alert.alert('Hata', 'Kullanıcı adı veya şifre yanlış!');
+  const handleLogin = async () => {
+    try {
+      const response = await fetch('http://172.20.10.3:5000/doctors'); // Doctors endpointini kontrol edin
+
+      if (!response.ok) {
+        throw new Error('Sunucudan geçersiz bir yanıt alındı!');
+      }
+
+      // Yanıtı JSON olarak çözümle
+      let doctors = [];
+      try {
+        doctors = await response.json();
+      } catch (parseError) {
+        throw new Error('API yanıtı geçerli bir JSON değil!');
+      }
+
+      // Giriş bilgilerini kontrol et
+      const doctor = doctors.find(
+        (doc: any) => doc.email === email.trim() && doc.password === password.trim()
+      );
+
+      if (doctor) {
+        // Giriş başarılı
+        router.push('/DoctorDashboardScreen');
+      } else {
+        // Giriş başarısız
+        Alert.alert('Hata', 'E-posta adresi veya şifre yanlış!');
+      }
+    } catch (error: any) {
+      console.error('Giriş Hatası:', error.message);
+      Alert.alert('Hata', error.message);
     }
   };
 
@@ -23,9 +46,9 @@ export default function DoctorLoginScreen() {
       <Text style={styles.title}>Doktor Girişi</Text>
       <TextInput
         style={styles.input}
-        placeholder="Kullanıcı Adı"
-        value={username}
-        onChangeText={setUsername}
+        placeholder="E-posta"
+        value={email}
+        onChangeText={setEmail}
       />
       <TextInput
         style={styles.input}
