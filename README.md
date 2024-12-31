@@ -50,7 +50,11 @@ Doktorlar, hastaların tahlil sonuçlarını oluşturulan kılavuzlarla kıyasla
 
 ![image](https://github.com/user-attachments/assets/196817e0-4abc-4da3-883b-dc2b7b7068e8)
 
+![image](https://github.com/user-attachments/assets/728f6854-2160-4f4f-92bd-35c1c82427a5)
 
+![image](https://github.com/user-attachments/assets/019d350b-4436-4cbe-b283-2989e0fd2e71)
 
+![image](https://github.com/user-attachments/assets/b71587d8-fa60-4174-8d54-41d5aad3d215)
 
+![image](https://github.com/user-attachments/assets/11c6cd43-e167-4c44-9e18-a1023794de34)
 
